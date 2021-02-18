@@ -48,6 +48,13 @@ data4 <-data1$FISHERIES
 
 
 #EXERCISE2
-EPILand<-data2[Landlock]
-summary(data1)
+data2
+data1
+EPI <-read.csv(file.choose(),header=T)
+View(EPI)
+test <- EPI$X.8
+test
+EPILand<-EPI[!Landlock]
 Eland <- EPILand[!is.na(EPILand)]
+hist(ELand)
+hist(ELand, seq(30., 95., 1.0), prob=TRUE)
