@@ -1,0 +1,5 @@
+set.seed(12345)
+help(par)
+par(mar = rep(0.2,4))
+data_Matrix <-matrix(rnorm(400), nrow = 40)
+image(1:10, 1:40, t(data_Matrix)[,nrow(data_Matrix):1])
